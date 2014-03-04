@@ -10,4 +10,11 @@ def calculate_coins(sum):
 				break
 	return dictionary
 
-print calculate_coins(0.53)
+
+def main():
+	print calculate_coins(0.53)
+	print calculate_coins(1.56)
+	print calculate_coins(10.73)
+
+if __name__ == '__main__':
+	main()

@@ -21,4 +21,11 @@ def prime_factorization(n):
 					dictionary[i] += 1
 	return dictionary
 
-print prime_factorization(356)
+
+def main():
+	print prime_factorization(356)
+	print prime_factorization(100)
+	print prime_factorization(40)
+
+if __name__ == '__main__':
+	main()

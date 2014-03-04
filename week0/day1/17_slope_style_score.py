@@ -14,5 +14,11 @@ def slope_style_score(scores):
 	result = float(sum) / len(scores)
 	return round(result, 2)
 
-print slope_style_score([94, 95, 95, 95, 90])
-print slope_style_score([96, 95.5, 93, 89, 92])
+
+def main():
+
+	print slope_style_score([94, 95, 95, 95, 90])
+	print slope_style_score([96, 95.5, 93, 89, 92])
+
+if __name__ = '__main__':
+	main()

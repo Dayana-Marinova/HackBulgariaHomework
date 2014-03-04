@@ -8,4 +8,11 @@ def count_consonants(str):
 				count += 1
 	return count
 
-print count_consonants('Theistareykjarbunga')
+
+def main():
+	print count_consonants('Theistareykjarbunga')
+	print count_consonants("neprotivokonstitucionstvovatelstvuvaite")
+	print count_consonants("Dayana Marinova")
+
+if __name__ == '__main__':
+	main()

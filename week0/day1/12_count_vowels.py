@@ -6,4 +6,11 @@ def count_vowels(str):
 			count += 1
 	return count
 
-print count_vowels("Dayana")
+
+def main():
+	print count_vowels("Dayana")
+	print count_vowels("I love you!")
+	print count_vowels("neprotivokonstitucionstvovatelstvuvaite")
+	
+if __name__ == '__main__':
+	main()
