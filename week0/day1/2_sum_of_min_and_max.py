@@ -8,6 +8,11 @@ def sum_of_min_and_max(arr):
 			max_num = arr[i]
 	return max_num + min_num
 
-print sum_of_min_and_max([-10, 55, 100])
-print sum_of_min_and_max([1,2,3,4,5,6,8,9])
-print sum_of_min_and_max([1])
+
+def main():
+	print sum_of_min_and_max([-10, 55, 100])
+	print sum_of_min_and_max([1,2,3,4,5,6,8,9])
+	print sum_of_min_and_max([1])
+
+if __name__ == '__main__':
+	main()
