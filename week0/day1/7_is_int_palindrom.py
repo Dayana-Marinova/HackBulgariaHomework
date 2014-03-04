@@ -9,8 +9,13 @@ def is_int_palindrom(n):
 	else:
 		return False
 
-print is_int_palindrom(1)
-print is_int_palindrom(42)
-print is_int_palindrom(10001)
-print is_int_palindrom(999)
-print is_int_palindrom(123)
+def main():
+
+	print is_int_palindrom(1)
+	print is_int_palindrom(42)
+	print is_int_palindrom(10001)
+	print is_int_palindrom(999)
+	print is_int_palindrom(123)
+
+if __name__ == '__main__':
+	main()
