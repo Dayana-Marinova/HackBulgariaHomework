@@ -18,6 +18,10 @@ def prime_number_of_divisors(n):
 			divisors += 1
 	return divisors
 
-print is_prime(prime_number_of_divisors(7))
-print is_prime(prime_number_of_divisors(8))
-print is_prime(prime_number_of_divisors(9))
+def main():
+	print is_prime(prime_number_of_divisors(7))
+	print is_prime(prime_number_of_divisors(8))
+	print is_prime(prime_number_of_divisors(9))
+
+if __name__ == '__main__':
+	main()
