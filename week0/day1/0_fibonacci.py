@@ -10,7 +10,11 @@ def nth_fibonacci(n):
 			second = n
 		return n
 		
-print nth_fibonacci(10)
-print nth_fibonacci(2)
-print nth_fibonacci(1)
-print nth_fibonacci(3)
+def main():
+	print nth_fibonacci(10)
+	print nth_fibonacci(2)
+	print nth_fibonacci(1)
+	print nth_fibonacci(3)
+
+if __name__ == '__main__':
+	main()
