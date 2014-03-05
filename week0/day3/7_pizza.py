@@ -15,6 +15,7 @@ def status(orders):
 		print key + ' - ' + str(orders[key])
 
 def save(orders, list_of_orders):
+	global it_is_saved
 	ts = time()
 	stamp = datetime.fromtimestamp(ts).strftime('%Y_%m_%d_%H_%M_%S')
 	name_of_order = 'orders_' + stamp
@@ -32,6 +33,7 @@ def lists(list_of_orders):
 		print '[' + str(items) + ']' + list_of_orders[items]
 
 def load(number,list_of_orders):
+	global it_is_saved
 	if it_is_saved == True:
 		for order in range(0,len(list_of_orders)):
 			if str(order) == number:
@@ -41,6 +43,7 @@ def load(number,list_of_orders):
 
 
 def finish():
+	global it_is_saved
 	if it_is_saved == True:
 		print 'Finishing order. Goodbye!'
 	else:
@@ -48,14 +51,15 @@ def finish():
 		it_is_saved = True
 
 def main():
+	global it_is_saved
 	orders = {}
 	list_of_orders = []
 	while True:
 		command = raw_input("Enter command> ")
 		command_array = command.split(" ")
-		print it_is_saved
 		if command_array[0] == 'take':
 			take(command_array[1],command_array[2], orders)
+			it_is_saved = False
 		elif command_array[0] == 'status':
 			status(orders)
 		elif command_array[0] == 'save':
