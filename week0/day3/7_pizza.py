@@ -30,13 +30,13 @@ def save(orders, list_of_orders):
 
 def lists(list_of_orders):
 	for items in range(0,len(list_of_orders)):
-		print '[' + str(items) + ']' + list_of_orders[items]
+		print '[' + str(items + 1) + ']' + list_of_orders[items]
 
 def load(number,list_of_orders):
 	global it_is_saved
 	if it_is_saved == True:
 		for order in range(0,len(list_of_orders)):
-			if str(order) == number:
+			if str(order + 1) == number:
 				list_of_orders.remove(list_of_orders[order])
 	else:
 		print 'You have unsaved order.' + '\n' + 'If you wish to discard the current order, type load again'
