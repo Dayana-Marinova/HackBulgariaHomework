@@ -11,8 +11,9 @@ def number_to_list(n):
 	while k > 0:
 		k -= 1
 		the_list.append(lists[k])
-	return the_list9
-	#return lists
+	return the_list
+
+
 def main():
 
 	print number_to_list(9999)
