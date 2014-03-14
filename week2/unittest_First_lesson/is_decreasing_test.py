@@ -2,7 +2,7 @@ import is_decreasing
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class IsDecreasingTest(unittest.TestCase):
     def test_is_decreasing1(self):
         self.assertEqual(True, is_decreasing.is_decreasing([5, 4, 3, 2, 1]))
 

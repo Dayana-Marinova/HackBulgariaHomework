@@ -2,7 +2,7 @@ import sum_of_min_and_max
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class SumMinMaxTest(unittest.TestCase):
     def test_sum_of_min_and_max1(self):
         self.assertEqual(2, sum_of_min_and_max.sum_of_min_and_max([1]))
 

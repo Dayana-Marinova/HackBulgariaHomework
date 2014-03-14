@@ -2,7 +2,7 @@ import count_consonants
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class CountConsonantsTest(unittest.TestCase):
     def test_count_consonants1(self):
         self.assertEqual(12, count_consonants.count_consonants("This is a test string"))
 

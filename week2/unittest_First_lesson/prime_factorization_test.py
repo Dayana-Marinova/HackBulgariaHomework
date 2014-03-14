@@ -2,7 +2,7 @@ import prime_factorization
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class FantorizationTest(unittest.TestCase):
     def test_prime_factorization1(self):
         self.assertEqual({2: 2, 5: 1}, prime_factorization.prime_factorization(20))
 

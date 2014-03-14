@@ -2,7 +2,7 @@ import count_substring
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class CountSubstringTest(unittest.TestCase):
     def test_count_substring1(self):
         self.assertEqual(2, count_substring.count_substrings("This is a test string", "is"))
 

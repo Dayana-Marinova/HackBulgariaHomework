@@ -2,7 +2,7 @@ import is_number_balanced
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class IsBalanceTest(unittest.TestCase):
     def test_is_number_balanced1(self):
         self.assertEqual(True, is_number_balanced.is_number_balanced(10001))
 

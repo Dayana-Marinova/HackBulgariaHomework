@@ -2,7 +2,7 @@ import fibonacci
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class FibonacciTest(unittest.TestCase):
     def test_fibonacci_1(self):
         self.assertEqual(1, fibonacci.nth_fibonacci(1))
 

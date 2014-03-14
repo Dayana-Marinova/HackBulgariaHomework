@@ -2,7 +2,7 @@ import is_int_palindrom
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class IsIntPalindromTest(unittest.TestCase):
     def test_is_int_palindrom1(self):
         self.assertEqual(True, is_int_palindrom.is_int_palindrom(10001))
 

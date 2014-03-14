@@ -2,7 +2,7 @@ import sum_of_digits
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class SumOfDigitsTest(unittest.TestCase):
     def test_fibonacci_123(self):
         self.assertEqual(6, sum_of_digits.sum_of_digits(-123))
 

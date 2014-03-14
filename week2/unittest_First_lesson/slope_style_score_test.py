@@ -2,7 +2,7 @@ import slope_style_score
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class SlopeScoreTest(unittest.TestCase):
     def test_slope_style_score1(self):
         self.assertEqual(94.67, slope_style_score.slope_style_score([94, 95, 95, 95, 90]))
 

@@ -2,7 +2,7 @@ import is_increasing
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class IsIncreasingTest(unittest.TestCase):
     def test_is_increasing1(self):
         self.assertEqual(True, is_increasing.is_increasing([0, 1, 2, 3]))
 

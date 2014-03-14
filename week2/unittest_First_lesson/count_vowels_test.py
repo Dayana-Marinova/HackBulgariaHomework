@@ -2,7 +2,7 @@ import count_vowels
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class CountVowelsTest(unittest.TestCase):
     def test_count_vowels1(self):
         self.assertEqual(5, count_vowels.count_vowels("This is a test string"))
 

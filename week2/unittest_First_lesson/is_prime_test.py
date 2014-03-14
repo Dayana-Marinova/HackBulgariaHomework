@@ -2,7 +2,7 @@ import is_prime
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class PrimeTest(unittest.TestCase):
     def test_is_prime1(self):
         self.assertEqual(False, is_prime.is_prime(12))
 

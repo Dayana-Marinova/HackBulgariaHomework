@@ -2,7 +2,7 @@ import what_is_my_sign
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class MySingTest(unittest.TestCase):
     def test_what_is_my_sign1(self):
         self.assertEqual('Libra', what_is_my_sign.what_is_my_sign(22, 10))
 

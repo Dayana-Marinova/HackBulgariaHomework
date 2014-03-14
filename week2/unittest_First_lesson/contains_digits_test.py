@@ -2,7 +2,7 @@ import contains_digits
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class ContainsDigitsTest(unittest.TestCase):
     def test_contains_digits1(self):
         self.assertEqual(True, contains_digits.contains_digits(10001, [0, 1]))
 

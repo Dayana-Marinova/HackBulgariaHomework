@@ -2,7 +2,7 @@ import list_to_number
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class ListToNumberTest(unittest.TestCase):
     def test_list_to_number1(self):
         self.assertEqual(9999, list_to_number.list_to_number([9, 9, 9, 9]))
 

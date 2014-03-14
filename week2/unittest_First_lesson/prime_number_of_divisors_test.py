@@ -2,7 +2,7 @@ import prime_number_of_divisors
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class PrimeNumberOfDivisorsTest(unittest.TestCase):
     def test_prime_number_of_divisors1(self):
         self.assertEqual(False, prime_number_of_divisors.prime_number_of_divisors(12))
 

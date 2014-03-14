@@ -2,7 +2,7 @@ import sum_of_divisors
 import unittest
 
 
-class CalculatorTest(unittest.TestCase):
+class SumOfDivisorsTest(unittest.TestCase):
     def test_sum_of_divisors1(self):
         self.assertEqual(28, sum_of_divisors.sum_of_divisors(12))
 
