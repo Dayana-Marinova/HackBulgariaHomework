@@ -2,10 +2,10 @@ import sys
 from random import randint
 
 
-def generate_numbers(filename, n):
+def generate_numbers(filename, numbers):
     file = open(filename, "w")
     contents = []
-    for i in range(0, int(n)):
+    for i in range(0, int(numbers)):
         contents.append(str(randint(0, 1000)))
 
     file.write(", ".join(contents))
