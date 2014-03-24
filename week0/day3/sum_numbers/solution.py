@@ -1,21 +1,19 @@
 import sys
-from random import randint
 
 
-def sum_numbers(filename, n):
+def sum_numbers(filename):
     sum = 0
-    file = open(filename, "w")
-    contents = []
-    for i in range(0, int(n)):
-        contents.append(str(randint(0, 1000)))
-        sum += int(contents[i])
-    file.write(" ".join(contents))
-    file.close()
-    print sum
+    file = open(filename, "r")
+    content = file.read()
+    countent_numbers = content.split(" ")
+    for number in countent_numbers:
+        number = int(number)
+        sum += number
+    return sum
 
 
 def main():
-    sum_numbers(sys.argv[1], sys.argv[2])
+    sum_numbers(sys.argv[1])
 
 if __name__ == '__main__':
     main()
