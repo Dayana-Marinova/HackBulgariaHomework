@@ -2,8 +2,7 @@ import sys
 
 
 def lines_count(filename):
-    print 'lines'
-    count = 1
+    count = 0
     file = open(filename, "r")
     for line in file:
         count += 1
@@ -12,8 +11,7 @@ def lines_count(filename):
 
 
 def words_count(filename):
-    print 'words'
-    count = 1
+    count = 0
     file = open(filename, 'r')
     for line in file:
         for char in line:
@@ -24,7 +22,6 @@ def words_count(filename):
 
 
 def chars_count(filename):
-    print 'chars'
     count = 0
     file = open(filename, 'r')
     for line in file:
@@ -35,11 +32,11 @@ def chars_count(filename):
 
 def main():
     if sys.argv[1] == 'chars':
-        print chars_count(sys.argv[2])
+        chars_count(sys.argv[2])
     elif sys.argv[1] == 'words':
-        print words_count(sys.argv[2])
+        words_count(sys.argv[2])
     elif sys.argv[1] == 'lines':
-        print lines_count(sys.argv[2])
+        lines_count(sys.argv[2])
     else:
         return "There is a problem!"
 
