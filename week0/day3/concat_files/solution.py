@@ -1,21 +1,24 @@
 import sys
 
 
-def concat_files(args):
+def concat_files(file1, file2):
     fname = 'MEGATRON.txt'
-    file_mas = []
-    for args in range(1, len(sys.argv)):
-        file = open(sys.argv[args], 'r')
-        file_mas.append(file.read())
-        file.close()
-    file = open(fname, 'w')
-    file.write("\n".join(file_mas))
+    file_array = []
+    file1_open = open(file1, 'r')
+    file_array.append(file1_open.read())
+    file1_open.close()
+    file2_open = open(file2, 'r')
+    file_array.append(file2_open.read())
+    file2_open.close()
+    file = open(fname, 'a')
+    file.write("\n".join(file_array))
     file.close()
-    return fname
+    file = open(fname, 'r')
+    return file.read()
 
 
 def main():
-    concat_files(sys.argv)
+    concat_files(sys.argv[1], sys.argv[2])
 
 if __name__ == '__main__':
     main()
