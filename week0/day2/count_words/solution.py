@@ -7,11 +7,3 @@ def count_words(arr):
         else:
             new_dic[i] = count
     return new_dic
-
-
-def main():
-    print count_words(['python', 'python', 'python'])
-    print count_words(["apple", "banana", "apple", "pie"])
-
-if __name__ == '__main__':
-    main()

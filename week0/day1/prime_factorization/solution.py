@@ -8,12 +8,3 @@ def prime_factorization(n):
                     n /= i
                     dictionary[i] += 1
     return dictionary
-
-
-def main():
-    print prime_factorization(356)
-    print prime_factorization(100)
-    print prime_factorization(40)
-
-if __name__ == '__main__':
-    main()

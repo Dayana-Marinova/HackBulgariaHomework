@@ -12,13 +12,3 @@ def number_to_list(n):
         k -= 1
         the_list.append(lists[k])
     return the_list
-
-
-def main():
-
-    print number_to_list(9999)
-    print number_to_list(123456789)
-    print number_to_list(4523)
-
-if __name__ == '__main__':
-    main()

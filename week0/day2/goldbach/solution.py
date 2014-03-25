@@ -21,7 +21,6 @@ def goldbach(n):
         return list_of_result
     elif len(list_of_result) == 2:
         if max(list_of_result[0]) != max(list_of_result[1]):
-            print 'ok'
             return list_of_result
         else:
             list_of_result.remove(list_of_result[1])
@@ -35,13 +34,3 @@ def goldbach(n):
             for num in range(0, len(list_of_result) / 2 + 1):
                 result.append(list_of_result[num])
             return result
-
-
-def main():
-    print goldbach(100)
-    print goldbach(10)
-    print goldbach(4)
-    print goldbach(8)
-
-if __name__ == '__main__':
-    main()

@@ -28,12 +28,3 @@ def what_is_my_sign(day, month):
     for sign in signs:
         if sign[1] == month and day in sign[2]:
             return sign[0]
-
-
-def main():
-    print what_is_my_sign(22, 10)
-    print what_is_my_sign(19, 1)
-    print what_is_my_sign(27, 5)
-
-if __name__ == '__main__':
-    main()

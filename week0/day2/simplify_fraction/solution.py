@@ -12,14 +12,3 @@ def simplify_fraction(fraction):
             denominator /= i
             return simplify_fraction((nominatior, denominator))
     return (nominatior, denominator)
-
-
-def main():
-    print simplify_fraction((3, 9))
-    print simplify_fraction((1, 7))
-    print simplify_fraction((4, 10))
-    print simplify_fraction((63, 462))
-    print simplify_fraction((8, 12))
-
-if __name__ == '__main__':
-    main()

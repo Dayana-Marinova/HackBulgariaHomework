@@ -7,12 +7,3 @@ def biggest_difference(arr):
         elif arr[i] > max_num:
             max_num = arr[i]
     return min_num - max_num
-
-
-def main():
-    print biggest_difference([1, 2, 3, 4, 5])
-    print biggest_difference([-10, -9, -1])
-    print biggest_difference(range(100))
-
-if __name__ == '__main__':
-    main()

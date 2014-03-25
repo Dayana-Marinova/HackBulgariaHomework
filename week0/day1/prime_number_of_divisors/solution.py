@@ -7,12 +7,3 @@ def prime_number_of_divisors(n):
         if n % i == 0:
             divisors += 1
     return divisors
-
-
-def main():
-    print is_prime(prime_number_of_divisors(7))
-    print is_prime(prime_number_of_divisors(8))
-    print is_prime(prime_number_of_divisors(9))
-
-if __name__ == '__main__':
-    main()

@@ -6,12 +6,3 @@ def count_consonants(str):
         if i in lists:
             count += 1
     return count
-
-
-def main():
-    print count_consonants('Theistareykjarbunga')
-    print count_consonants("neprotivokonstitucionstvovatelstvuvaite")
-    print count_consonants("Dayana Marinova")
-
-if __name__ == '__main__':
-    main()
