@@ -1,5 +1,7 @@
 from time import time
 from datetime import datetime
+
+
 it_is_saved = False
 
 
@@ -8,12 +10,15 @@ def take(name, price, orders):
         orders[name] += float(price)
     else:
         orders[name] = float(price)
-    print ("Taking order from %s for %s" % (name, price))
+    output = "Taking order from %s for %s" % (name, price)
+    print(output)
+    return output
 
 
 def status(orders):
     for key in orders:
-        print key + ' - ' + str(orders[key])
+        print(key + ' - ' + str(orders[key]))
+    return len(orders)
 
 
 def save(orders, list_of_orders):
@@ -26,32 +31,39 @@ def save(orders, list_of_orders):
     for key in orders:
         file.write(key + " - " + str(orders[key]) + '\n')
     file.close()
-    print ('Saved the current order to %s.' % name_of_order)
+    output = 'Saved the current order to %s.' % name_of_order
+    print(output)
     it_is_saved = True
+    return output
 
 
 def lists(list_of_orders):
     for items in range(0, len(list_of_orders)):
-        print '[' + str(items + 1) + ']' + list_of_orders[items]
+        print('[' + str(items + 1) + ']' + list_of_orders[items])
+    return len(list_of_orders)
 
 
-def load(number, list_of_orders):
-    global it_is_saved
+def load(number, list_of_orders, it_is_saved):
     if it_is_saved:
+        print('la')
         for order in range(0, len(list_of_orders)):
             if str(order + 1) == number:
                 list_of_orders.remove(list_of_orders[order])
+                return len(list_of_orders)
     else:
-        print 'You have unsaved order.' + '\n' + 'If you wish to discard the current order, type load again'
+        output = 'You have unsaved order.' + '\n' + 'If you wish to discard the current order, type load again'
+        print(output)
+        return output
 
 
-def finish():
-    global it_is_saved
+def finish(it_is_saved):
     if it_is_saved:
-        print 'Finishing order. Goodbye!'
+        print('Finishing order. Goodbye!')
+        return 'Finishing order. Goodbye!'
     else:
-        print 'You have not saved your order.' + '\n' + 'If you wish to continue, type finish again.' + '\n' + 'If you want to save your order, type save'
+        print('You have not saved your order.' + '\n' + 'If you wish to continue, type finish again.' + '\n' + 'If you want to save your order, type save')
         it_is_saved = True
+        return 'You have not saved your order.' + '\n' + 'If you wish to continue, type finish again.' + '\n' + 'If you want to save your order, type save'
 
 
 def main():
@@ -59,7 +71,7 @@ def main():
     orders = {}
     list_of_orders = []
     while True:
-        command = raw_input("Enter command> ")
+        command = input("Enter command> ")
         command_array = command.split(" ")
         if command_array[0] == 'take':
             take(command_array[1], command_array[2], orders)
@@ -71,7 +83,7 @@ def main():
         elif command_array[0] == 'list':
             lists(list_of_orders)
         elif command_array[0] == 'load':
-            load(command_array[1], list_of_orders)
+            load(command_array[1], list_of_orders, it_is_saved)
         elif command_array[0] == 'finish':
             if not it_is_saved:
                 finish()
@@ -79,7 +91,7 @@ def main():
                 finish()
                 break
         else:
-            print 'There is no command like this!'
+            print('There is no command like this!')
 
 if __name__ == '__main__':
     main()
